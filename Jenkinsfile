@@ -61,7 +61,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule1 && rm -rf /opt/train-schedule1/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule1 && sudo /usr/bin/systemctl start train-schedule1'
+                                        execCommand: 'sudo /usr/bin/systemctl stop train-schedule && rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule && sudo /usr/bin/systemctl start train-schedule'
                                     )
                                 ]
                             )
